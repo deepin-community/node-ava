@@ -1,0 +1,37 @@
+indent-string
+strip-ansi
+type-fest
+@types/js-yaml
+@types/node
+
+#ansi-styles	test
+#arrify		test
+#cbor		test
+#chalk		test
+#chokidar	test
+#ci-info	test
+#clean-yaml-object	test
+#cli-truncate	test
+#concordance	test
+#debug		test
+#del		test
+#emittery	test
+#figures	test
+#find-up	test
+#globby		test
+#is-plain-object	test
+#is-promise	test
+#js-yaml	test
+#load-json-file	test
+#mem		test
+#ms		test
+#p-map		test
+#p-timeout	test
+#picomatch	test
+#plur		test
+#pretty-ms	test
+#resolve-cwd	test
+#slash		test
+#stack-utils	test
+#write-file-atomic	test
+#yargs		test

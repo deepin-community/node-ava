@@ -1,0 +1,5 @@
+Tests: runexamples
+Depends: @, node-got
+
+Tests: ava-typescript
+Depends: @, dh-nodejs, node-typescript

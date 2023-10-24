@@ -1,0 +1,27 @@
+Description: fix manpage
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-06-25
+
+--- a/docs/05-command-line.md
++++ b/docs/05-command-line.md
+@@ -1,7 +1,9 @@
+-# CLI
++# AVA - Test runner for Node.js with a concise API
+ 
+ Translations: [Français](https://github.com/avajs/ava-docs/blob/main/fr_FR/docs/05-command-line.md)
+ 
++## SYNOPSIS
++
+ ```console
+ ava [<pattern>...]
+ ava debug [<pattern>...]
+@@ -51,6 +53,8 @@
+   ava test.js:4,7-9
+ ```
+ 
++## DESCRIPTION
++
+ AVA searches for test files using the following patterns:
+ 
+ * `test.js`

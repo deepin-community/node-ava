@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
 %:
 	dh $@
+
+override_dh_installdocs:
+	dh_installdocs
+	dh_nodejs_autodocs
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod +x debian/ava/usr/share/nodejs/ava/entrypoints/cli.mjs

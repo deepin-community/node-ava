@@ -1,0 +1,3 @@
+patch -p1 < debian/patches/manpage.patch
+marked-man docs/05-command-line.md >ava.1
+patch -R -p1 < debian/patches/manpage.patch

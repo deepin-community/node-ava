@@ -1,5 +1,106 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-ava (5.3.1+dfsg+~cs46.3.10-2) unstable; urgency=medium
 
-  * Initial release
+  * Back to unstable
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Mon, 25 Sep 2023 07:38:24 +0400
+
+node-ava (5.3.1+dfsg+~cs46.3.10-1) experimental; urgency=medium
+
+  * Update standards version to 4.6.2, no changes needed.
+  * New upstream version 5.3.1+dfsg+~cs46.3.10
+  * Refresh patches
+
+ -- Yadd <yadd@debian.org>  Wed, 13 Sep 2023 14:48:11 +0400
+
+node-ava (5.1.0+dfsg+~cs44.2.10-1) unstable; urgency=medium
+
+  * New upstream version 5.1.0+dfsg+~cs44.2.10
+
+ -- Yadd <yadd@debian.org>  Tue, 22 Nov 2022 16:34:04 +0100
+
+node-ava (5.0.1+dfsg+~cs44.2.10-1) unstable; urgency=medium
+
+  * New upstream version 5.0.1+dfsg+~cs44.2.10
+
+ -- Yadd <yadd@debian.org>  Thu, 06 Oct 2022 16:13:19 +0200
+
+node-ava (5.0.0+dfsg+~cs43.2.10-4) unstable; urgency=medium
+
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Thu, 06 Oct 2022 16:08:38 +0200
+
+node-ava (5.0.0+dfsg+~cs43.2.10-3) experimental; urgency=medium
+
+  * Increase test timeout (for armel) (Closes: #1021080)
+
+ -- Yadd <yadd@debian.org>  Sat, 01 Oct 2022 19:07:26 +0200
+
+node-ava (5.0.0+dfsg+~cs43.2.10-2) experimental; urgency=medium
+
+  * Require node-del >= 7
+
+ -- Yadd <yadd@debian.org>  Sat, 17 Sep 2022 22:18:14 +0200
+
+node-ava (5.0.0+dfsg+~cs43.2.10-1) experimental; urgency=medium
+
+  * New upstream version 5.0.0+dfsg+~cs43.2.10
+
+ -- Yadd <yadd@debian.org>  Sat, 17 Sep 2022 19:04:44 +0200
+
+node-ava (4.3.3+dfsg+~cs43.2.10-2) unstable; urgency=medium
+
+  * Increase test timeout (armel) (Closes: #1021080)
+
+ -- Yadd <yadd@debian.org>  Sat, 01 Oct 2022 19:12:29 +0200
+
+node-ava (4.3.3+dfsg+~cs43.2.10-1) unstable; urgency=medium
+
+  * New upstream version 4.3.3+dfsg+~cs43.2.10
+
+ -- Yadd <yadd@debian.org>  Fri, 26 Aug 2022 07:25:40 +0200
+
+node-ava (4.3.1+dfsg+~cs43.2.10-1) unstable; urgency=medium
+
+  * New upstream version 4.3.1+dfsg+~cs43.2.10
+
+ -- Yadd <yadd@debian.org>  Wed, 13 Jul 2022 07:02:25 +0200
+
+node-ava (4.3.0+dfsg+~cs43.2.10-1) unstable; urgency=medium
+
+  * Embed @ava/typescript and repack
+    + Add patch for execa 6
+    + Add related test
+
+ -- Yadd <yadd@debian.org>  Wed, 29 Jun 2022 16:06:36 +0200
+
+node-ava (4.3.0+dfsg+~cs40.2.9-1) unstable; urgency=medium
+
+  * Add README.Debian
+  * Declare compliance with policy 4.6.1
+  * New upstream version 4.3.0+dfsg+~cs40.2.9
+  * Refresh manpage patch
+  * Update lintian overrides
+
+ -- Yadd <yadd@debian.org>  Sat, 25 Jun 2022 13:45:35 +0200
+
+node-ava (4.2.0+dfsg+~cs39.2.9-2) unstable; urgency=medium
+
+  * Source-only upload to allow migration
+
+ -- Yadd <yadd@debian.org>  Mon, 09 May 2022 08:38:35 +0200
+
+node-ava (4.2.0+dfsg+~cs39.2.9-1) experimental; urgency=medium
+
+  * Require node-load-json-file >= 7
+  * New upstream version 4.2.0+dfsg+~cs39.2.9
+  * Add little autopkgtest
+
+ -- Yadd <yadd@debian.org>  Sat, 07 May 2022 08:37:15 +0200
+
+node-ava (4.1.0+dfsg+~cs38.3.9-1) experimental; urgency=medium
+
+  [ Pirate Praveen, Yadd ]
+  * Initial release (Closes: #889058)
+
+ -- Yadd <yadd@debian.org>  Wed, 23 Mar 2022 18:55:30 +0100

@@ -1,0 +1,8 @@
+#884861  ITP:  node-temp-write           -- http://bugs.debian.org/884861
+#850124  ITP:  node-is-error             -- http://bugs.debian.org/850124 (Pradnya/Ignore)
+#854569  ITP:  node-convert-to-spaces    -- http://bugs.debian.org/854569 (Abhishek/Ignore)
+#850493  ITP:  node-co-with-promise      -- http://bugs.debian.org/850493 (Ravishankar/Ignore)
+#850138  ITP:  node-call-signature       -- http://bugs.debian.org/850138 (Sudhanshu/FTP masters rejected due to description)
+#854504  ITP:  node-is-ci                -- http://bugs.debian.org/854504 (Akash/Ignore)
+#850117  ITP:  node-common-path-prefix   -- http://bugs.debian.org/850117 (Ameya/Ignore)
+#852657  ITP:  node-espurify             -- http://bugs.debian.org/852657 (Tushar/Ignore)
