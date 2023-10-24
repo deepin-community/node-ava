@@ -1,0 +1,10 @@
+browser: false
+coverage: false
+files:
+  - "test-tap/*.js"
+  - "test-tap/reporters/*.js"
+  - "test-tap/integration/*.js"
+flow: false
+jsx: false
+timeout: 300
+ts: false

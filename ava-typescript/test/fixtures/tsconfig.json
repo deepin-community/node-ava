@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"strictNullChecks": true,
+		"outDir": "typescript/compiled"
+	},
+	"include": [
+		"typescript"
+	]
+}

@@ -1,0 +1,16 @@
+Description: patch for js-yaml 4
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-03-21
+
+--- a/supertap/source/index.ts
++++ b/supertap/source/index.ts
+@@ -65,7 +65,7 @@
+ 		const object = error instanceof Error ? serializeErrorForTap(error) : error;
+ 
+ 		output.push(
+-			['  ---', indentString(yaml.safeDump(object).trim(), 4), '  ...'].join(
++			['  ---', indentString(yaml.dump(object).trim(), 4), '  ...'].join(
+ 				'\n',
+ 			),
+ 		);

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+cd ${AUTOPKGTEST_TMP:-/tmp}
+
+cp -a /usr/share/doc/ava/examples .
+
+LIST="macros matching-titles"
+
+CODE=0
+for EX in $LIST; do
+	(cd examples/$EX && ava --timeout=5m) || CODE=1
+done
+exit $CODE

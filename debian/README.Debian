@@ -1,0 +1,48 @@
+# Notes on ava 4
+
+ava 4 is usable only with ES modules. If you want to run test of a commonjs
+module, you can use tape (preferred) or jest.
+
+## Using tape
+
+To use tape instead of ava, you have to patch test. Some tips:
+ * replace `import test from 'ava'` by `import test from 'tape'`
+   (or by `const test = require('tape')` if your module isn't ES)
+ * add a `t.end()` at the end of each test
+ * translate each test files into commonjs if module isn't `type:module`
+ * replace all:
+   * `t.truthy` by `t.ok`
+   * `t.falsy` by `t.nok`
+   * `t.notThrows` by `t.doesNotThrow`
+   * `t.regex(string, /regex/)` by `t.ok(string.match(/regex/))`
+ * drop tests that uses `t.notThrowsAsync` or `t.throwsAsync`
+
+If your module is a ES module, you may have to link tape for test:
+
+```shell
+$ cat >> debian/nodejs/extlinks << EOF
+tape	test
+EOF
+```
+
+## Using jest
+
+You can transform a ava test file into a jest one using `npx jest-codemods`.
+Then you have to answer to some questions:
+ * **Which parser do you want to use?**                          : choose babel
+ * **Which test library would you like to migrate from?**        : choose ava
+ * **Are you using the global object for assertions**            : choose no
+ * **Will you be using Jest on Node.js as your test runner?**    : choose yes
+ * **On which files or directory should the codemods be applied?**: enter the
+   good directory (test for example)
+
+Then you may have to add a `babel.config.json` file if you encounter errors
+like `Jest encountered an unexpected token`:
+
+```shell
+$ cat > babel.config.json << EOF
+{"presets":["@babel/preset-env"],"plugins":["@babel/plugin-transform-runtime"]}
+EOF
+```
+
+Then you'll probably have things to fix...

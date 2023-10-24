@@ -1,0 +1,4 @@
+rm -f ava.config.js
+cd ava-typescript
+pkgjs-install-minimal
+ava

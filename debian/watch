@@ -1,0 +1,95 @@
+version=4
+opts=\
+dversionmangle=auto,\
+repacksuffix=+dfsg,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-ava-$1/ \
+ https://github.com/avajs/ava/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=arrgv,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-arrgv-$1/ \
+ https://github.com/astur/arrgv/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=chunkd,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-chunkd-$1/ \
+ https://github.com/jamiebuilds/chunkd/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=ci-parallel-vars,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-ci-parallel-vars-$1/ \
+ https://github.com/jamiebuilds/ci-parallel-vars/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=code-excerpt,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-code-excerpt-$1/ \
+ https://github.com/vadimdemedes/code-excerpt/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=common-path-prefix,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-common-path-prefix-$1/ \
+ https://github.com/novemberborn/common-path-prefix/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=convert-to-spaces,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-convert-to-spaces-$1/ \
+ https://github.com/vadimdemedes/convert-to-spaces/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=is-error,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-is-error-$1/" \
+ https://registry.npmjs.org/is-error https://registry.npmjs.org/is-error/-/is-error-([\d\.]+)@ARCHIVE_EXT@ checksum
+
+opts=\
+component=p-event,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-p-event-$1/ \
+ https://github.com/sindresorhus/p-event/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=pkg-conf,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-pkg-conf-$1/ \
+ https://github.com/sindresorhus/pkg-conf/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=serialize-error,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-serialize-error-$1/ \
+ https://github.com/sindresorhus/serialize-error/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=supertap,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-supertap-$1/ \
+ https://github.com/vadimdemedes/supertap/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=temp-dir,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-temp-dir-$1/ \
+ https://github.com/sindresorhus/temp-dir/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=ava-typescript,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-typescript-$1/ \
+ https://github.com/avajs/typescript/tags .*/archive.*/v?([\d\.]+).tar.gz checksum

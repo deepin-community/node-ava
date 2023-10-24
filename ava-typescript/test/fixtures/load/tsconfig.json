@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"strictNullChecks": true,
+		"module": "Node16",
+		"outDir": "compiled"
+	},
+	"include": [
+		"."
+	]
+}

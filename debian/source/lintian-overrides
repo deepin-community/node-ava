@@ -1,0 +1,16 @@
+# Same author
+add-component-copyright p-event *
+add-component-copyright pkg-conf *
+add-component-copyright serialize-error *
+add-component-copyright temp-dir *
+# False positives
+very-long-line-length-in-source-file *.md*
+# Included in dh-seqeunce-nodejs
+missing-build-dependency-for-dh_-command dh_nodejs_autodocs *
+# Patch used only during manpage build
+patch-file-present-but-not-mentioned-in-series *debian/patches/manpage.patch*
+# Test data
+very-long-line-length-in-source-file *media/logo.ai*
+very-long-line-length-in-source-file *media/pronunciation.m4a*
+very-long-line-length-in-source-file *test/line-numbers/fixtures/*
+very-long-line-length-in-source-file *.snap*
